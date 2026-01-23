@@ -1,6 +1,6 @@
 export const siteConfig = {
   companyName: "iDma international Ltd",
-  productName: "iDma",
+  productName: "iDma AI handwriting",
   websiteUrl: "https://www.idma.ai",
   tagline: "Smart handwriting & interactive learning ecosystem",
   description: "iDma provides real-time handwriting capture and dual-board interactive tutoring solutions for schools, tutoring centers, educators, and enterprise training teams.",
