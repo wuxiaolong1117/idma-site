@@ -8,6 +8,8 @@ import Card from "@/components/Card";
 import FeatureGrid from "@/components/FeatureGrid";
 import FAQ from "@/components/FAQ";
 import Testimonial from "@/components/Testimonial";
+import VideoEmbed from "@/components/VideoEmbed";
+import SocialShare from "@/components/SocialShare";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -111,6 +113,35 @@ export default function Home() {
                 more intuitive interactions between educators and students.
               </p>
             </Card>
+          </div>
+        </Container>
+      </Section>
+
+      {/* Video Demo Section */}
+      <Section>
+        <Container>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              See iDma in Action
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+              Watch how iDma transforms remote teaching and learning with real-time handwriting capture.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            {/* 示例：YouTube 视频 - 替换为你的实际视频 ID 或 URL */}
+            <VideoEmbed
+              youtubeUrl="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+              title="iDma 产品演示视频"
+              className="mb-8"
+            />
+            {/* 或者使用本地视频：
+            <VideoEmbed
+              localVideo="/videos/demo.mp4"
+              title="iDma 产品演示视频"
+              className="mb-8"
+            />
+            */}
           </div>
         </Container>
       </Section>
@@ -279,13 +310,17 @@ export default function Home() {
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Request a demo to see how iDma can transform your teaching and training sessions.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button href="/contact" variant="secondary" size="lg">
                 {siteConfig.cta.primary}
               </Button>
               <Button href="/downloads" variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white/20">
                 {siteConfig.cta.secondary}
               </Button>
+            </div>
+            {/* 社交媒体分享 */}
+            <div className="flex justify-center">
+              <SocialShare className="text-white" />
             </div>
           </div>
         </Container>

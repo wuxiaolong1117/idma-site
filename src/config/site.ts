@@ -4,6 +4,24 @@ export const siteConfig = {
   websiteUrl: "https://www.idma.ai",
   tagline: "Smart handwriting & interactive learning ecosystem",
   description: "iDma provides real-time handwriting capture and dual-board interactive tutoring solutions for schools, tutoring centers, educators, and enterprise training teams.",
+  keywords: [
+    "handwriting capture",
+    "interactive learning",
+    "dual-board tutoring",
+    "remote teaching",
+    "online tutoring",
+    "digital whiteboard",
+    "education technology",
+    "edtech",
+    "real-time collaboration",
+    "AI learning",
+    "smart handwriting",
+    "interactive tutoring",
+  ],
+  // Google Analytics ID (可选，需要时添加)
+  analytics: {
+    googleAnalyticsId: undefined, // 例如: "G-XXXXXXXXXX"
+  },
   contactEmail: "contact@idma.ai",
   phone: "+44 7547 237151",
   address: {
