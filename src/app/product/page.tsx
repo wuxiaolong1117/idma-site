@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { siteConfig } from "@/config/site";
 import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
 
 export const metadata: Metadata = {
   title: "Product",
@@ -167,17 +167,9 @@ export default function ProductPage() {
               <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
                 Bring Handwriting Back to Your Zoom Meetings - Naturally. Write on Paper, Share on Zoom - Instantly.
               </p>
-              {/* Product Demo Image */}
-              <div className="max-w-4xl mx-auto mb-8">
-                <div className="relative w-full aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
-                  <Image
-                    src="/images/idma-winter-holiday-poster.png"
-                    alt="iDma Dual-Board AI Teaching Kit - Real-time handwriting capture and Zoom integration"
-                    fill
-                    className="object-contain"
-                    priority
-                  />
-                </div>
+              {/* English Version Poster - Replacing Chinese Image */}
+              <div className="max-w-5xl mx-auto mb-8">
+                <ZoomIntegrationPoster />
               </div>
             </div>
 

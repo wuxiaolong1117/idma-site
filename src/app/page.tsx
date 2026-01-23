@@ -11,6 +11,7 @@ import FAQ from "@/components/FAQ";
 import Testimonial from "@/components/Testimonial";
 import VideoEmbed from "@/components/VideoEmbed";
 import SocialShare from "@/components/SocialShare";
+import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -130,17 +131,9 @@ export default function Home() {
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
                   Write on Paper, Share on Zoom - Instantly. Our smart handwriting notebook integrates seamlessly with Zoom, letting you write naturally with pen and paper while everyone sees your notes in real time.
                 </p>
-                {/* Product Demo Image */}
-                <div className="max-w-4xl mx-auto mb-8">
-                  <div className="relative w-full aspect-[4/3] rounded-lg shadow-lg overflow-hidden">
-                    <Image
-                      src="/images/idma-winter-holiday-poster.png"
-                      alt="iDma Dual-Board AI Teaching Kit - Real-time handwriting capture and Zoom integration"
-                      fill
-                      className="object-contain"
-                      priority
-                    />
-                  </div>
+                {/* English Version Poster - Replacing Chinese Image */}
+                <div className="max-w-5xl mx-auto mb-8">
+                  <ZoomIntegrationPoster />
                 </div>
               </div>
 
