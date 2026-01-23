@@ -31,7 +31,7 @@ export const siteConfig = {
     country: "United Kingdom",
   },
   social: {
-    linkedin: "https://linkedin.com/company/idma",
+    linkedin: "https://www.linkedin.com/company/111557964",
     youtube: "https://youtube.com/@idma",
     x: "https://x.com/idma",
     github: undefined, // Optional
