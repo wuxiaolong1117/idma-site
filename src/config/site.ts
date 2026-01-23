@@ -18,9 +18,9 @@ export const siteConfig = {
     "smart handwriting",
     "interactive tutoring",
   ],
-  // Google Analytics ID (可选，需要时添加)
+  // Google Analytics ID
   analytics: {
-    googleAnalyticsId: undefined, // 例如: "G-XXXXXXXXXX"
+    googleAnalyticsId: "G-01391XBS97",
   },
   contactEmail: "contact@idma.ai",
   phone: "+44 7547 237151",
