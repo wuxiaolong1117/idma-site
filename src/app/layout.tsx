@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { siteConfig } from "@/config/site";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -65,28 +66,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        {/* Google Analytics (可选 - 需要时取消注释并添加 ID) */}
-        {/* {siteConfig.analytics.googleAnalyticsId && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.googleAnalyticsId}`}
-            />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', '${siteConfig.analytics.googleAnalyticsId}');
-                `,
-              }}
-            />
-          </>
-        )} */}
-      </head>
       <body className={inter.className}>
+        <GoogleAnalytics />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
