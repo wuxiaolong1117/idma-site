@@ -17,13 +17,13 @@
     "next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "autoprefixer": "^10"
-  },
-  "devDependencies": {
+    "autoprefixer": "^10",
     "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/react-dom": "^18"
+  },
+  "devDependencies": {
     "eslint": "^8",
     "eslint-config-next": "14.2.5"
   }
