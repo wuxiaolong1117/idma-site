@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.productName}`,
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
+  keywords: [...siteConfig.keywords],
   authors: [{ name: siteConfig.companyName }],
   creator: siteConfig.companyName,
   publisher: siteConfig.companyName,
