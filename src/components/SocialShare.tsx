@@ -34,7 +34,7 @@ export default function SocialShare({
 
   const handleShare = async (platform: string, url: string) => {
     // 如果浏览器支持 Web Share API，使用原生分享
-    if (platform === "native" && typeof navigator !== "undefined" && navigator.share) {
+    if (platform === "native" && typeof navigator !== "undefined" && "share" in navigator) {
       try {
         await navigator.share({
           title,
@@ -112,7 +112,7 @@ export default function SocialShare({
         </a>
 
         {/* 原生分享（移动设备） */}
-        {typeof navigator !== "undefined" && navigator.share && (
+        {typeof navigator !== "undefined" && "share" in navigator && (
           <button
             onClick={() => handleShare("native", "")}
             className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-colors"
