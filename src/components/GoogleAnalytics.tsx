@@ -12,6 +12,7 @@ export default function GoogleAnalytics() {
 
   return (
     <>
+      {/* Google tag (gtag.js) - 放在 head 中以确保 Google 能检测到 */}
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
@@ -24,9 +25,7 @@ export default function GoogleAnalytics() {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${gaId}', {
-              page_path: window.location.pathname,
-            });
+            gtag('config', '${gaId}');
           `,
         }}
       />
