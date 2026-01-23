@@ -117,6 +117,120 @@ export default function Home() {
         </Container>
       </Section>
 
+      {/* Zoom Integration Feature */}
+      <Section background="blue">
+        <Container>
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                  Bring Handwriting Back to Your Zoom Meetings - Naturally
+                </h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  Write on Paper, Share on Zoom - Instantly. Our smart handwriting notebook integrates seamlessly with Zoom, letting you write naturally with pen and paper while everyone sees your notes in real time.
+                </p>
+              </div>
+
+              {/* Problem & Solution */}
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <Card className="border-2 border-red-200 bg-red-50">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">The Problem</h3>
+                  <p className="text-gray-700">
+                    Do you struggle to write clearly with a mouse or stylus during Zoom calls? Does explaining complex ideas on a smooth screen feel awkward and slow? You are not alone - traditional handwriting is still the fastest way to think and collaborate, yet most remote tools don&apos;t support it.
+                  </p>
+                </Card>
+                <Card className="border-2 border-blue-200 bg-blue-50">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Our Solution</h3>
+                  <p className="text-gray-700">
+                    No new hardware, no steep learning curve - just open the app in Zoom and start writing. Our smart handwriting notebook integrates seamlessly with Zoom, letting you write naturally with pen and paper while everyone sees your notes in real time.
+                  </p>
+                </Card>
+              </div>
+
+              {/* Key Features */}
+              <div className="mb-8">
+                <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Key Features</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span className="text-2xl">👥</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Collaborative Mode</h4>
+                      <p className="text-gray-600 text-sm">
+                        All participants can see the handwritten content in real-time, making it perfect for team discussions, brainstorming sessions, or collaborative learning.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span className="text-2xl">📱</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Dual-Screen Mode</h4>
+                      <p className="text-gray-600 text-sm">
+                        Students and teachers can share handwritten content on separate screens, with the ability to compare and annotate. This is a unique feature Zoom doesn&apos;t offer!
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span className="text-2xl">✏️</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Real-Time Annotations</h4>
+                      <p className="text-gray-600 text-sm">
+                        Teachers can mark up students&apos; handwriting directly on the screen, bringing the classroom experience to life even in a virtual environment.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                      <span className="text-2xl">🔗</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Seamless Integration</h4>
+                      <p className="text-gray-600 text-sm">
+                        Our product combines Zoom&apos;s video capabilities with iDma&apos;s handwriting functionality, ensuring a smooth experience without disrupting your workflow.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Perfect For */}
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h4 className="font-semibold text-gray-900 mb-4 text-center">Perfect for:</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex items-center space-x-3">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-gray-700">Teachers & Trainers giving interactive online lessons</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-gray-700">Remote Teams brainstorming or planning projects</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-gray-700">Students & Study Groups working through problems together</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <span className="text-blue-600">✓</span>
+                    <span className="text-gray-700">Tutors & Coaches explaining concepts visually</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center mt-8">
+                <Button href="/product" variant="primary" size="lg">
+                  Learn More About Zoom Integration
+                </Button>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+
       {/* Video Demo Section */}
       <Section>
         <Container>
