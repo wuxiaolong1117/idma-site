@@ -53,7 +53,7 @@ export default function Home() {
       />
       
       {/* Hero Section */}
-      <Section background="blue" className="pt-8 md:pt-16">
+      <Section background="black" className="pt-8 md:pt-16">
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
@@ -120,7 +120,7 @@ export default function Home() {
       </Section>
 
       {/* Zoom Integration Feature */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
@@ -421,7 +421,7 @@ export default function Home() {
       </Section>
 
       {/* Final CTA Banner */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

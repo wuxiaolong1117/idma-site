@@ -92,7 +92,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
   return (
     <>
       {/* Hero */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <div className="mb-4">
@@ -153,7 +153,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </Section>
 
       {/* Quote */}
-      <Section background="blue">
+      <Section background="black">
         <Container size="md">
           <Card className="bg-white">
             <div className="text-center">

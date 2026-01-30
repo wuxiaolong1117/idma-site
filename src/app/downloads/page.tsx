@@ -50,7 +50,7 @@ export default function DownloadsPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

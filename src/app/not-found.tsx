@@ -7,7 +7,7 @@ import Button from "@/components/Button";
 export default function NotFound() {
   return (
     <>
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-4">404</h1>

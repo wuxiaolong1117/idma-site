@@ -19,7 +19,7 @@ export default function PartnersPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -154,7 +154,7 @@ export default function PartnersPage() {
       </Section>
 
       {/* CTA */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

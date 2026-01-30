@@ -17,7 +17,7 @@ const LAST_UPDATED = "January 22, 2026";
 export default function PrivacyPage() {
   return (
     <>
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">

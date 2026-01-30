@@ -18,10 +18,10 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="blue">
+      <Section background="black">
         <Container>
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
               About {siteConfig.companyName}
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
