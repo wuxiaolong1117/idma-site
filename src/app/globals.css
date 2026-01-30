@@ -4,24 +4,49 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #1D1D1F; /* Apple Text Color */
 }
 
+/* Optional: Dark mode support (Apple style dark gray) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --foreground: #F5F5F7;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; /* Critical for Apple "crisp" text */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  /* Apple-style Button Base */
+  .btn-apple {
+    @apply rounded-full px-6 py-2 transition-all duration-300 font-medium tracking-tight;
+  }
+  
+  /* Apple-style Card */
+  .card-apple {
+    @apply bg-white rounded-3xl border border-gray-100 shadow-apple hover:shadow-apple-hover transition-all duration-500;
+  }
+
+  /* Frosted Glass Effect */
+  .glass-effect {
+    @apply bg-white/70 backdrop-blur-md border-b border-gray-200/50;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  /* Large Apple Headings */
+  .text-apple-display {
+    @apply font-semibold tracking-tight text-[#1D1D1F];
   }
 }

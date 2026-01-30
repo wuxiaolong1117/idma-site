@@ -7,331 +7,193 @@ import Card from "@/components/Card";
 import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
 
 export const metadata: Metadata = {
-  title: "Product",
-  description: "Learn about the iDma hardware and software ecosystem for smart handwriting and interactive learning.",
-  openGraph: {
-    title: "Product | iDma",
-    description: "Learn about the iDma hardware and software ecosystem for smart handwriting and interactive learning.",
-  },
+  title: "Products",
+  description: "Discover iDma's range of AI-powered handwriting devices for business and education.",
 };
 
 export default function ProductPage() {
   return (
     <>
       {/* Hero */}
-      <Section background="blue">
+      <Section background="white" className="pt-24 pb-16">
         <Container>
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              {siteConfig.productName} Hardware + Software Ecosystem
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-apple-display text-5xl md:text-6xl mb-6">
+              Smart Handwriting. <span className="text-[#0071E3]">Reimagined.</span>
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-              A complete solution combining compatible digital writing devices with powerful 
-              software for real-time handwriting capture, dual-board interaction, and AI-assisted documentation.
+            <p className="text-xl md:text-2xl text-[#86868B] mb-10 leading-relaxed">
+              Experience the natural feel of pen on paper, instantly digitized and enhanced by AI.
+              Designed for modern meetings, creative collaboration, and personalized education.
             </p>
-            <Button href="/contact" variant="primary" size="lg">
-              {siteConfig.cta.primary}
-            </Button>
           </div>
         </Container>
       </Section>
 
-      {/* Hardware + Software Overview */}
-      <Section>
-        <Container>
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Hardware</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                iDma works with compatible digital pens and tablets that support real-time 
-                handwriting capture. We provide a list of recommended devices that have been 
-                tested and optimized for the best experience.
-              </p>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Compatible digital pens and tablets</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Low-latency pressure-sensitive input</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Cross-platform device support</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Recommended device list provided</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">Software</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                The iDma software platform provides real-time synchronization, dual-board 
-                interaction, AI-assisted summaries, and seamless integration with video 
-                conferencing tools.
-              </p>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Real-time ink synchronization</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Dual-board interactive mode</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>AI-assisted lesson summaries</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue-600 mr-2">✓</span>
-                  <span>Video platform integration</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Feature Comparison */}
+      {/* Product Lineup */}
       <Section background="gray">
         <Container>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Traditional vs. iDma Dual-Board
-            </h2>
-          </div>
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse bg-white rounded-lg shadow-md">
-              <thead>
-                <tr className="bg-gray-100">
-                  <th className="border border-gray-300 px-6 py-4 text-left font-semibold text-gray-900">
-                    Feature
-                  </th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-semibold text-gray-900">
-                    Traditional Video + Whiteboard
-                  </th>
-                  <th className="border border-gray-300 px-6 py-4 text-center font-semibold text-blue-600">
-                    iDma Dual-Board
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-gray-300 px-6 py-4 font-medium">Real-time handwriting sync</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">Limited</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Yes</td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="border border-gray-300 px-6 py-4 font-medium">Dual-board interaction</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">No</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Yes</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-6 py-4 font-medium">Lesson replay</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">Manual recording</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Automatic</td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="border border-gray-300 px-6 py-4 font-medium">AI summaries</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">No</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Yes</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 px-6 py-4 font-medium">Low-latency correction</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">High latency</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Low latency</td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="border border-gray-300 px-6 py-4 font-medium">Export & sharing</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center">Manual</td>
-                  <td className="border border-gray-300 px-6 py-4 text-center bg-blue-50">✓ Built-in</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="grid lg:grid-cols-3 gap-8">
+            
+            {/* PP-100: AI Smart Meeting Notebook */}
+            <Card className="flex flex-col h-full card-apple overflow-hidden">
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-8">
+                {/* Placeholder for Product Image */}
+                <div className="text-6xl">📓</div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="mb-4">
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Business</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-100</h3>
+                  <p className="text-[#86868B] font-medium">AI Smart Meeting Notebook</p>
+                </div>
+                <p className="text-[#1D1D1F] mb-6 flex-grow">
+                  Your exclusive AI meeting assistant. Write on real paper with a natural feel, 
+                  and let our AI digitize, organize, and summarize your notes instantly.
+                </p>
+                <ul className="space-y-3 mb-8 text-sm text-[#424245]">
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Real Paper Feel
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Instant AI Sync & Digitization
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Meeting Minutes Ready Instantly
+                  </li>
+                </ul>
+                <Button href="/contact" variant="primary" className="w-full">
+                  Request Info
+                </Button>
+              </div>
+            </Card>
+
+            {/* PP-110: Smart Sync Whiteboard */}
+            <Card className="flex flex-col h-full card-apple overflow-hidden">
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-8">
+                {/* Placeholder for Product Image */}
+                <div className="text-6xl">💡</div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="mb-4">
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Collaboration</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-110</h3>
+                  <p className="text-[#86868B] font-medium">Smart Sync Whiteboard</p>
+                </div>
+                <p className="text-[#1D1D1F] mb-6 flex-grow">
+                  Instant collaboration for agile teams. Sync handwriting directly to digital screens 
+                  in real-time. Essential for brainstorming sessions and hybrid work environments.
+                </p>
+                <ul className="space-y-3 mb-8 text-sm text-[#424245]">
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Live Paper-to-Screen Sync
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Ideal for Small Groups
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Draw, Write & Share Instantly
+                  </li>
+                </ul>
+                <Button href="/contact" variant="primary" className="w-full">
+                  Request Info
+                </Button>
+              </div>
+            </Card>
+
+            {/* PP-120: AI Smart Tutoring System */}
+            <Card className="flex flex-col h-full card-apple overflow-hidden">
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-8">
+                {/* Placeholder for Product Image */}
+                <div className="text-6xl">🎓</div>
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="mb-4">
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Education</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-120</h3>
+                  <p className="text-[#86868B] font-medium">AI Smart Tutoring System</p>
+                </div>
+                <p className="text-[#1D1D1F] mb-6 flex-grow">
+                  AI-powered personalized tutoring. Built for precision education, blending 
+                  traditional handwriting with AI analysis to track progress and enhance learning outcomes.
+                </p>
+                <ul className="space-y-3 mb-8 text-sm text-[#424245]">
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Precision Teaching Tools
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> Natural Handwriting Interaction
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-[#0071E3] mr-2">✓</span> AI-Enhanced Learning Analytics
+                  </li>
+                </ul>
+                <Button href="/contact" variant="primary" className="w-full">
+                  Request Info
+                </Button>
+              </div>
+            </Card>
+
           </div>
         </Container>
       </Section>
 
-      {/* Zoom Integration */}
-      <Section background="gray">
+      {/* Feature Deep Dive (Zoom) */}
+      <Section background="white">
         <Container>
           <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Seamless Zoom Integration
+             <div className="text-center mb-16">
+              <h2 className="text-apple-display text-4xl mb-6">
+                Works perfectly with <span className="text-[#0071E3]">Zoom</span>.
               </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
-                Bring Handwriting Back to Your Zoom Meetings - Naturally. Write on Paper, Share on Zoom - Instantly.
+              <p className="text-xl text-[#86868B] max-w-3xl mx-auto">
+                No complex setup. No new software to learn. Just connect and start writing 
+                to share your ideas instantly in any Zoom meeting.
               </p>
-              {/* English Version Poster - Replacing Chinese Image */}
-              <div className="max-w-5xl mx-auto mb-8">
-                <ZoomIntegrationPoster />
-              </div>
             </div>
-
-            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12 mb-12">
-              {/* Problem & Solution */}
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div className="border-l-4 border-red-500 pl-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">The Problem</h3>
-                  <p className="text-gray-700">
-                    Do you struggle to write clearly with a mouse or stylus during Zoom calls? Does explaining complex ideas on a smooth screen feel awkward and slow? You are not alone - traditional handwriting is still the fastest way to think and collaborate, yet most remote tools don&apos;t support it.
-                  </p>
-                </div>
-                <div className="border-l-4 border-blue-500 pl-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Our Solution</h3>
-                  <p className="text-gray-700">
-                    Our smart handwriting notebook integrates seamlessly with Zoom, letting you write naturally with pen and paper while everyone sees your notes in real time. No new hardware, no steep learning curve - just open the app in Zoom and start writing.
-                  </p>
-                </div>
-              </div>
-
-              {/* Key Features */}
-              <div className="mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Key Features</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <Card className="border-2 border-blue-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">👥</span>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Collaborative Mode</h4>
-                        <p className="text-gray-600 text-sm">
-                          All participants can see the handwritten content in real-time, making it perfect for team discussions, brainstorming sessions, or collaborative learning.
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                  <Card className="border-2 border-blue-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">📱</span>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Dual-Screen Mode</h4>
-                        <p className="text-gray-600 text-sm">
-                          Students and teachers can share handwritten content on separate screens, with the ability to compare and annotate. This is a unique feature Zoom doesn&apos;t offer!
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                  <Card className="border-2 border-blue-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">✏️</span>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Real-Time Annotations</h4>
-                        <p className="text-gray-600 text-sm">
-                          Teachers can mark up students&apos; handwriting directly on the screen, bringing the classroom experience to life even in a virtual environment.
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                  <Card className="border-2 border-blue-200">
-                    <div className="flex items-start space-x-4">
-                      <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                        <span className="text-2xl">🔗</span>
-                      </div>
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2">Seamless Integration</h4>
-                        <p className="text-gray-600 text-sm">
-                          Our product combines Zoom&apos;s video capabilities with iDma&apos;s handwriting functionality, ensuring a smooth experience without disrupting your workflow.
-                        </p>
-                      </div>
-                    </div>
-                  </Card>
-                </div>
-              </div>
-
-              {/* Perfect For */}
-              <div className="bg-gray-50 rounded-lg p-6">
-                <h4 className="font-semibold text-gray-900 mb-4">Perfect for:</h4>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Teachers & Trainers giving interactive online lessons</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Remote Teams brainstorming or planning projects</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Students & Study Groups working through problems together</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <span className="text-blue-600 font-bold">✓</span>
-                    <span className="text-gray-700">Tutors & Coaches explaining concepts visually</span>
-                  </div>
-                </div>
-              </div>
+            
+            <div className="bg-[#F5F5F7] rounded-3xl p-8 md:p-12">
+               <div className="max-w-4xl mx-auto mb-12 shadow-2xl rounded-2xl overflow-hidden">
+                  <ZoomIntegrationPoster />
+               </div>
+               
+               <div className="grid md:grid-cols-2 gap-12">
+                 <div>
+                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">Seamless Integration</h3>
+                   <p className="text-[#424245] leading-relaxed">
+                     Our hardware integrates directly with Zoom's whiteboard and screen sharing capabilities.
+                     Whether you are teaching a math class or brainstorming a product roadmap, 
+                     your handwriting appears on screen with zero lag.
+                   </p>
+                 </div>
+                 <div>
+                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">Secure & Private</h3>
+                   <p className="text-[#424245] leading-relaxed">
+                     Security is built-in, not bolted on. Your data is encrypted end-to-end, 
+                     and we comply with GDPR standards to ensure your meeting content remains 
+                     confidential and secure.
+                   </p>
+                 </div>
+               </div>
             </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* How It Works */}
-      <Section>
-        <Container>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              How It Works
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              {
-                step: "1",
-                title: "Connect Devices",
-                description: "Both teacher and student connect their iDma-compatible devices to the platform.",
-              },
-              {
-                step: "2",
-                title: "Start Session",
-                description: "Begin a tutoring or teaching session. The dual-board mode activates automatically.",
-              },
-              {
-                step: "3",
-                title: "Write & Collaborate",
-                description: "Handwriting appears in real-time on both screens. Corrections and annotations sync instantly.",
-              },
-              {
-                step: "4",
-                title: "Review & Export",
-                description: "Access lesson replays, AI-generated summaries, and export content for later review.",
-              },
-            ].map((item) => (
-              <Card key={item.step} className="text-center">
-                <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </Card>
-            ))}
           </div>
         </Container>
       </Section>
 
       {/* CTA */}
-      <Section background="blue">
+      <Section background="gray" className="py-24">
         <Container>
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Experience {siteConfig.productName} for Yourself
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-apple-display text-4xl mb-8">
+              Ready to transform your workflow?
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Request a demo to see how the hardware and software work together.
-            </p>
-            <Button href="/contact" variant="secondary" size="lg">
-              {siteConfig.cta.primary}
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button href="/contact" variant="primary" size="lg">
+                Contact Sales
+              </Button>
+              <Button href="/downloads" variant="secondary" size="lg">
+                View Documentation
+              </Button>
+            </div>
           </div>
         </Container>
       </Section>
