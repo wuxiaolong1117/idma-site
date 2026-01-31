@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Intelligente Handschrift. <span class=\"text-[#0071E3]\">Neu definiert.</span>",
+      "subtitle": "Erleben Sie das natürliche Gefühl von Stift auf Papier, sofort digitalisiert und durch KI verbessert. Entwickelt für moderne Meetings, kreative Zusammenarbeit und personalisierte Bildung.",
+      "ctaPrimary": "Demo anfordern",
+      "ctaSecondary": "Lösungen erkunden"
+    },
+    "products": {
+      "pp100": {
+        "category": "Business",
+        "title": "iDma PP-100",
+        "subtitle": "KI-Smart-Meeting-Notizbuch",
+        "description": "Ihr exklusiver KI-Meeting-Assistent. Schreiben Sie auf echtem Papier mit natürlichem Gefühl und lassen Sie unsere KI Ihre Notizen sofort digitalisieren, organisieren und zusammenfassen.",
+        "feature1": "Echtes Papier-Gefühl",
+        "feature2": "Sofortige KI-Synchronisation & Digitalisierung",
+        "feature3": "Meeting-Protokolle sofort bereit",
+        "cta": "Infos anfordern"
+      },
+      "pp110": {
+        "category": "Zusammenarbeit",
+        "title": "iDma PP-110",
+        "subtitle": "Smart Sync Whiteboard",
+        "description": "Sofortige Zusammenarbeit für agile Teams. Synchronisieren Sie Handschrift in Echtzeit direkt auf digitale Bildschirme. Unverzichtbar für Brainstorming und hybride Arbeit.",
+        "feature1": "Live Papier-zu-Bildschirm Sync",
+        "feature2": "Ideal für kleine Gruppen",
+        "feature3": "Zeichnen, Schreiben & Sofort Teilen",
+        "cta": "Infos anfordern"
+      },
+      "pp120": {
+        "category": "Bildung",
+        "title": "iDma PP-120",
+        "subtitle": "KI-Smart-Tutoring-System",
+        "description": "KI-gestütztes personalisiertes Tutoring. Entwickelt für präzise Bildung, kombiniert traditionelle Handschrift mit KI-Analyse, um Fortschritte zu verfolgen und Lernergebnisse zu verbessern.",
+        "feature1": "Präzisions-Lehrwerkzeuge",
+        "feature2": "Natürliche Handschrift-Interaktion",
+        "feature3": "KI-gestützte Lernanalyse",
+        "cta": "Infos anfordern"
+      }
+    },
+    "zoom": {
+      "title": "Funktioniert perfekt mit <span class=\"text-[#0071E3]\">Zoom</span>.",
+      "subtitle": "Keine komplexe Einrichtung. Keine neue Software zu lernen. Einfach verbinden und schreiben, um Ihre Ideen sofort in jedem Zoom-Meeting zu teilen.",
+      "seamlessTitle": "Nahtlose Integration",
+      "seamlessDesc": "Unsere Hardware integriert sich direkt in die Whiteboard- und Bildschirmfreigabe-Funktionen von Zoom. Egal ob Sie Mathe unterrichten oder eine Produkt-Roadmap planen, Ihre Handschrift erscheint ohne Verzögerung auf dem Bildschirm.",
+      "secureTitle": "Sicher & Privat",
+      "secureDesc": "Sicherheit ist eingebaut, nicht aufgesetzt. Ihre Daten sind Ende-zu-Ende verschlüsselt und wir halten uns an GDPR-Standards, um sicherzustellen, dass Ihre Meeting-Inhalte vertraulich und sicher bleiben."
+    },
+    "ctaFinal": {
+      "title": "Bereit, Ihren Workflow zu transformieren?",
+      "primary": "Vertrieb kontaktieren",
+      "secondary": "Dokumentation ansehen"
+    }
+  },
+  "Navigation": {
+    "product": "Produkt",
+    "solutions": "Lösungen",
+    "pricing": "Preise",
+    "caseStudies": "Fallstudien",
+    "partners": "Partner",
+    "downloads": "Downloads",
+    "support": "Support",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  }
+}

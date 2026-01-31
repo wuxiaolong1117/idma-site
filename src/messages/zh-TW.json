@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "智慧手寫，<span class=\"text-[#0071E3]\">重新定義。</span>",
+      "subtitle": "體驗紙筆書寫的自然觸感，瞬間數位化並由 AI 賦能。專為現代會議、創意協作和個人化教育而設計。",
+      "ctaPrimary": "申請演示",
+      "ctaSecondary": "探索解決方案"
+    },
+    "products": {
+      "pp100": {
+        "category": "商務",
+        "title": "iDma PP-100",
+        "subtitle": "AI 智慧會議本",
+        "description": "您的專屬 AI 會議助手。在真紙上自然書寫，讓 AI 即時數位化、整理並生成會議紀錄。",
+        "feature1": "真實紙張書寫感",
+        "feature2": "AI 同步與即時數位化",
+        "feature3": "會議紀錄即刻生成",
+        "cta": "獲取資訊"
+      },
+      "pp110": {
+        "category": "協作",
+        "title": "iDma PP-110",
+        "subtitle": "智慧同步白板",
+        "description": "敏捷團隊的即時協作利器。將手寫內容即時同步到數位螢幕。腦力激盪和混合辦公的必備工具。",
+        "feature1": "紙屏即時同步",
+        "feature2": "小團隊協作首選",
+        "feature3": "即寫即畫，即時分享",
+        "cta": "獲取資訊"
+      },
+      "pp120": {
+        "category": "教育",
+        "title": "iDma PP-120",
+        "subtitle": "AI 智慧輔導系統",
+        "description": "AI 驅動的個人化輔導。專為精準教學打造，融合傳統手寫與 AI 分析，追蹤學習進度，提升教學效果。",
+        "feature1": "精準教學工具",
+        "feature2": "自然手寫互動",
+        "feature3": "AI 增強學習分析",
+        "cta": "獲取資訊"
+      }
+    },
+    "zoom": {
+      "title": "與 <span class=\"text-[#0071E3]\">Zoom</span> 完美融合。",
+      "subtitle": "無需複雜設定，無需學習新軟體。連接即寫，在任何 Zoom 會議中即時分享您的創意。",
+      "seamlessTitle": "無縫整合",
+      "seamlessDesc": "我們的硬體直接整合 Zoom 的白板和螢幕共享功能。無論是數學教學還是產品規劃，您的筆跡都能零延遲呈現在螢幕上。",
+      "secureTitle": "安全隱私",
+      "secureDesc": "安全性是核心基因，而非附加功能。數據採用端到端加密，並符合 GDPR 標準，確保您的會議內容機密安全。"
+    },
+    "ctaFinal": {
+      "title": "準備好升級您的工作流程了嗎？",
+      "primary": "聯繫銷售",
+      "secondary": "查看文件"
+    }
+  },
+  "Navigation": {
+    "product": "產品",
+    "solutions": "解決方案",
+    "pricing": "價格",
+    "caseStudies": "案例研究",
+    "partners": "合作夥伴",
+    "downloads": "下載",
+    "support": "支援",
+    "about": "關於我們",
+    "contact": "聯繫我們"
+  }
+}

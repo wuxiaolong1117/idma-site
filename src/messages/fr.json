@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "L'Écriture Intelligente. <span class=\"text-[#0071E3]\">Réinventée.</span>",
+      "subtitle": "Découvrez la sensation naturelle du stylo sur papier, numérisée instantanément et améliorée par l'IA. Conçu pour les réunions modernes, la collaboration créative et l'éducation personnalisée.",
+      "ctaPrimary": "Demander une Démo",
+      "ctaSecondary": "Explorer les Solutions"
+    },
+    "products": {
+      "pp100": {
+        "category": "Affaires",
+        "title": "iDma PP-100",
+        "subtitle": "Cahier de Réunion Intelligent IA",
+        "description": "Votre assistant de réunion IA exclusif. Écrivez sur du vrai papier avec une sensation naturelle et laissez notre IA numériser, organiser et résumer vos notes instantanément.",
+        "feature1": "Sensation Papier Réel",
+        "feature2": "Sync IA & Numérisation Instantanée",
+        "feature3": "Comptes Rendus Prêts Instantanément",
+        "cta": "Demander des Infos"
+      },
+      "pp110": {
+        "category": "Collaboration",
+        "title": "iDma PP-110",
+        "subtitle": "Tableau Blanc Sync Intelligent",
+        "description": "Collaboration instantanée pour les équipes agiles. Synchronisez l'écriture manuscrite directement sur les écrans numériques en temps réel. Essentiel pour le brainstorming et le travail hybride.",
+        "feature1": "Sync Papier-Écran en Direct",
+        "feature2": "Idéal pour Petits Groupes",
+        "feature3": "Dessinez, Écrivez & Partagez Instantanément",
+        "cta": "Demander des Infos"
+      },
+      "pp120": {
+        "category": "Éducation",
+        "title": "iDma PP-120",
+        "subtitle": "Système de Tutorat IA",
+        "description": "Tutorat personnalisé propulsé par l'IA. Conçu pour une éducation de précision, alliant écriture traditionnelle et analyse IA pour suivre les progrès et améliorer les résultats d'apprentissage.",
+        "feature1": "Outils d'Enseignement de Précision",
+        "feature2": "Interaction Manuscrite Naturelle",
+        "feature3": "Analytique d'Apprentissage Améliorée par IA",
+        "cta": "Demander des Infos"
+      }
+    },
+    "zoom": {
+      "title": "Fonctionne parfaitement avec <span class=\"text-[#0071E3]\">Zoom</span>.",
+      "subtitle": "Pas de configuration complexe. Pas de nouveau logiciel à apprendre. Connectez-vous simplement et commencez à écrire pour partager vos idées instantanément dans n'importe quelle réunion Zoom.",
+      "seamlessTitle": "Intégration Transparente",
+      "seamlessDesc": "Notre matériel s'intègre directement aux fonctionnalités de tableau blanc et de partage d'écran de Zoom. Que vous enseigniez les maths ou planifiez une roadmap produit, votre écriture apparaît à l'écran sans latence.",
+      "secureTitle": "Sécurisé & Privé",
+      "secureDesc": "La sécurité est intégrée, pas ajoutée. Vos données sont chiffrées de bout en bout et nous respectons les normes RGPD pour garantir la confidentialité de vos réunions."
+    },
+    "ctaFinal": {
+      "title": "Prêt à transformer votre flux de travail ?",
+      "primary": "Contacter les Ventes",
+      "secondary": "Voir la Documentation"
+    }
+  },
+  "Navigation": {
+    "product": "Produit",
+    "solutions": "Solutions",
+    "pricing": "Tarifs",
+    "caseStudies": "Études de Cas",
+    "partners": "Partenaires",
+    "downloads": "Téléchargements",
+    "support": "Support",
+    "about": "À Propos",
+    "contact": "Contact"
+  }
+}

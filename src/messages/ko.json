@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "스마트 필기. <span class=\"text-[#0071E3]\">재정의되다.</span>",
+      "subtitle": "종이 위 펜의 자연스러운 느낌 그대로, 즉시 디지털화되고 AI로 향상됩니다. 현대적인 회의, 창의적인 협업, 개인화된 교육을 위해 설계되었습니다.",
+      "ctaPrimary": "데모 요청",
+      "ctaSecondary": "솔루션 탐색"
+    },
+    "products": {
+      "pp100": {
+        "category": "비즈니스",
+        "title": "iDma PP-100",
+        "subtitle": "AI 스마트 회의 노트",
+        "description": "당신만의 AI 회의 비서. 실제 종이에 자연스럽게 필기하면, AI가 노트를 즉시 디지털화하고 정리하며 요약해줍니다.",
+        "feature1": "실제 종이 필기감",
+        "feature2": "즉각적인 AI 동기화 및 디지털화",
+        "feature3": "회의록 즉시 완성",
+        "cta": "정보 요청"
+      },
+      "pp110": {
+        "category": "협업",
+        "title": "iDma PP-110",
+        "subtitle": "스마트 싱크 화이트보드",
+        "description": "민첩한 팀을 위한 즉각적인 협업. 손글씨를 디지털 화면에 실시간으로 동기화합니다. 브레인스토밍과 하이브리드 근무에 필수적입니다.",
+        "feature1": "종이-화면 실시간 동기화",
+        "feature2": "소규모 그룹에 최적",
+        "feature3": "즉시 쓰고, 그리고, 공유",
+        "cta": "정보 요청"
+      },
+      "pp120": {
+        "category": "교육",
+        "title": "iDma PP-120",
+        "subtitle": "AI 스마트 튜터링 시스템",
+        "description": "AI 기반 맞춤형 튜터링. 정밀 교육을 위해 구축되었으며, 전통적인 필기와 AI 분석을 결합하여 학습 진행 상황을 추적하고 성과를 향상시킵니다.",
+        "feature1": "정밀 교육 도구",
+        "feature2": "자연스러운 필기 상호작용",
+        "feature3": "AI 강화 학습 분석",
+        "cta": "정보 요청"
+      }
+    },
+    "zoom": {
+      "title": "<span class=\"text-[#0071E3]\">Zoom</span>과 완벽하게 작동합니다.",
+      "subtitle": "복잡한 설정이 필요 없습니다. 새로운 소프트웨어를 배울 필요도 없습니다. 연결하고 쓰기만 하면 모든 Zoom 회의에서 아이디어를 즉시 공유할 수 있습니다.",
+      "seamlessTitle": "원활한 통합",
+      "seamlessDesc": "저희 하드웨어는 Zoom의 화이트보드 및 화면 공유 기능과 직접 통합됩니다. 수학 수업이든 제품 로드맵 기획이든, 필기 내용이 지연 없이 화면에 나타납니다.",
+      "secureTitle": "보안 및 개인정보 보호",
+      "secureDesc": "보안은 추가 기능이 아닌 기본 내장입니다. 데이터는 종단간 암호화되며, 회의 내용의 기밀성을 보장하기 위해 GDPR 표준을 준수합니다."
+    },
+    "ctaFinal": {
+      "title": "워크플로우를 혁신할 준비가 되셨나요?",
+      "primary": "영업팀 문의",
+      "secondary": "문서 보기"
+    }
+  },
+  "Navigation": {
+    "product": "제품",
+    "solutions": "솔루션",
+    "pricing": "가격",
+    "caseStudies": "사례 연구",
+    "partners": "파트너",
+    "downloads": "다운로드",
+    "support": "지원",
+    "about": "소개",
+    "contact": "문의"
+  }
+}

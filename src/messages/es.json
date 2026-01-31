@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Escritura Inteligente. <span class=\"text-[#0071E3]\">Reimaginada.</span>",
+      "subtitle": "Experimenta la sensación natural del bolígrafo sobre papel, digitalizado instantáneamente y mejorado por IA. Diseñado para reuniones modernas, colaboración creativa y educación personalizada.",
+      "ctaPrimary": "Solicitar Demo",
+      "ctaSecondary": "Explorar Soluciones"
+    },
+    "products": {
+      "pp100": {
+        "category": "Negocios",
+        "title": "iDma PP-100",
+        "subtitle": "Cuaderno de Reuniones IA",
+        "description": "Tu asistente exclusivo de reuniones con IA. Escribe en papel real con sensación natural y deja que nuestra IA digitalice, organice y resuma tus notas al instante.",
+        "feature1": "Sensación de Papel Real",
+        "feature2": "Sincronización y Digitalización IA Instantánea",
+        "feature3": "Actas de Reunión Listas al Instante",
+        "cta": "Más Información"
+      },
+      "pp110": {
+        "category": "Colaboración",
+        "title": "iDma PP-110",
+        "subtitle": "Pizarra de Sincronización Inteligente",
+        "description": "Colaboración instantánea para equipos ágiles. Sincroniza la escritura a mano directamente en pantallas digitales en tiempo real. Esencial para lluvias de ideas y trabajo híbrido.",
+        "feature1": "Sincronización Papel-Pantalla en Vivo",
+        "feature2": "Ideal para Grupos Pequeños",
+        "feature3": "Dibuja, Escribe y Comparte al Instante",
+        "cta": "Más Información"
+      },
+      "pp120": {
+        "category": "Educación",
+        "title": "iDma PP-120",
+        "subtitle": "Sistema de Tutoría IA",
+        "description": "Tutoría personalizada impulsada por IA. Construido para una educación precisa, combinando la escritura tradicional con análisis de IA para rastrear el progreso y mejorar el aprendizaje.",
+        "feature1": "Herramientas de Enseñanza de Precisión",
+        "feature2": "Interacción Natural de Escritura",
+        "feature3": "Analítica de Aprendizaje Mejorada por IA",
+        "cta": "Más Información"
+      }
+    },
+    "zoom": {
+      "title": "Funciona perfectamente con <span class=\"text-[#0071E3]\">Zoom</span>.",
+      "subtitle": "Sin configuraciones complejas. Sin software nuevo que aprender. Solo conecta y empieza a escribir para compartir tus ideas al instante en cualquier reunión de Zoom.",
+      "seamlessTitle": "Integración Fluida",
+      "seamlessDesc": "Nuestro hardware se integra directamente con la pizarra y las capacidades de compartir pantalla de Zoom. Ya sea que estés enseñando matemáticas o planificando un producto, tu escritura aparece en pantalla sin retraso.",
+      "secureTitle": "Seguro y Privado",
+      "secureDesc": "La seguridad está integrada, no añadida. Tus datos están cifrados de extremo a extremo y cumplimos con las normas GDPR para garantizar que el contenido de tus reuniones permanezca confidencial."
+    },
+    "ctaFinal": {
+      "title": "¿Listo para transformar tu flujo de trabajo?",
+      "primary": "Contactar Ventas",
+      "secondary": "Ver Documentación"
+    }
+  },
+  "Navigation": {
+    "product": "Producto",
+    "solutions": "Soluciones",
+    "pricing": "Precios",
+    "caseStudies": "Casos de Estudio",
+    "partners": "Socios",
+    "downloads": "Descargas",
+    "support": "Soporte",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "智能手写，<span class=\"text-[#0071E3]\">重塑未来。</span>",
+      "subtitle": "体验纸笔书写的自然触感，瞬间数字化并由 AI 赋能。专为现代会议、创意协作和个性化教育而设计。",
+      "ctaPrimary": "申请演示",
+      "ctaSecondary": "探索解决方案"
+    },
+    "products": {
+      "pp100": {
+        "category": "商务",
+        "title": "iDma PP-100",
+        "subtitle": "AI 智能会议本",
+        "description": "您的专属 AI 会议助手。在真纸上自然书写，让 AI 即时数字化、整理并生成会议纪要。",
+        "feature1": "真实纸张书写感",
+        "feature2": "AI 同步与即时数字化",
+        "feature3": "会议纪要即刻生成",
+        "cta": "获取资料"
+      },
+      "pp110": {
+        "category": "协作",
+        "title": "iDma PP-110",
+        "subtitle": "智能同步白板",
+        "description": "敏捷团队的即时协作利器。将手写内容实时同步到数字屏幕。头脑风暴和混合办公的必备工具。",
+        "feature1": "纸屏实时同步",
+        "feature2": "小团队协作首选",
+        "feature3": "即写即画，即时分享",
+        "cta": "获取资料"
+      },
+      "pp120": {
+        "category": "教育",
+        "title": "iDma PP-120",
+        "subtitle": "AI 智能辅导系统",
+        "description": "AI 驱动的个性化辅导。专为精准教学打造，融合传统手写与 AI 分析，追踪学习进度，提升教学效果。",
+        "feature1": "精准教学工具",
+        "feature2": "自然手写交互",
+        "feature3": "AI 增强学习分析",
+        "cta": "获取资料"
+      }
+    },
+    "zoom": {
+      "title": "与 <span class=\"text-[#0071E3]\">Zoom</span> 完美融合。",
+      "subtitle": "无需复杂设置，无需学习新软件。连接即写，在任何 Zoom 会议中即时分享您的创意。",
+      "seamlessTitle": "无缝集成",
+      "seamlessDesc": "我们的硬件直接集成 Zoom 的白板和屏幕共享功能。无论是数学教学还是产品规划，您的笔迹都能零延迟呈现在屏幕上。",
+      "secureTitle": "安全隐私",
+      "secureDesc": "安全性是核心基因，而非附加功能。数据采用端到端加密，并符合 GDPR 标准，确保您的会议内容机密安全。"
+    },
+    "ctaFinal": {
+      "title": "准备好升级您的工作流了吗？",
+      "primary": "联系销售",
+      "secondary": "查看文档"
+    }
+  },
+  "Navigation": {
+    "product": "产品",
+    "solutions": "解决方案",
+    "pricing": "价格",
+    "caseStudies": "案例研究",
+    "partners": "合作伙伴",
+    "downloads": "下载",
+    "support": "支持",
+    "about": "关于我们",
+    "contact": "联系我们"
+  }
+}

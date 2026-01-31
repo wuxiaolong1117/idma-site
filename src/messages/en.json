@@ -1,0 +1,66 @@
+{
+  "HomePage": {
+    "hero": {
+      "title": "Smart Handwriting. <span class=\"text-[#0071E3]\">Reimagined.</span>",
+      "subtitle": "Experience the natural feel of pen on paper, instantly digitized and enhanced by AI. Designed for modern meetings, creative collaboration, and personalized education.",
+      "ctaPrimary": "Request a Demo",
+      "ctaSecondary": "Explore Solutions"
+    },
+    "products": {
+      "pp100": {
+        "category": "Business",
+        "title": "iDma PP-100",
+        "subtitle": "AI Smart Meeting Notebook",
+        "description": "Your exclusive AI meeting assistant. Write on real paper with a natural feel, and let our AI digitize, organize, and summarize your notes instantly.",
+        "feature1": "Real Paper Feel",
+        "feature2": "Instant AI Sync & Digitization",
+        "feature3": "Meeting Minutes Ready Instantly",
+        "cta": "Request Info"
+      },
+      "pp110": {
+        "category": "Collaboration",
+        "title": "iDma PP-110",
+        "subtitle": "Smart Sync Whiteboard",
+        "description": "Instant collaboration for agile teams. Sync handwriting directly to digital screens in real-time. Essential for brainstorming sessions and hybrid work environments.",
+        "feature1": "Live Paper-to-Screen Sync",
+        "feature2": "Ideal for Small Groups",
+        "feature3": "Draw, Write & Share Instantly",
+        "cta": "Request Info"
+      },
+      "pp120": {
+        "category": "Education",
+        "title": "iDma PP-120",
+        "subtitle": "AI Smart Tutoring System",
+        "description": "AI-powered personalized tutoring. Built for precision education, blending traditional handwriting with AI analysis to track progress and enhance learning outcomes.",
+        "feature1": "Precision Teaching Tools",
+        "feature2": "Natural Handwriting Interaction",
+        "feature3": "AI-Enhanced Learning Analytics",
+        "cta": "Request Info"
+      }
+    },
+    "zoom": {
+      "title": "Works perfectly with <span class=\"text-[#0071E3]\">Zoom</span>.",
+      "subtitle": "No complex setup. No new software to learn. Just connect and start writing to share your ideas instantly in any Zoom meeting.",
+      "seamlessTitle": "Seamless Integration",
+      "seamlessDesc": "Our hardware integrates directly with Zoom's whiteboard and screen sharing capabilities. Whether you are teaching a math class or brainstorming a product roadmap, your handwriting appears on screen with zero lag.",
+      "secureTitle": "Secure & Private",
+      "secureDesc": "Security is built-in, not bolted on. Your data is encrypted end-to-end, and we comply with GDPR standards to ensure your meeting content remains confidential and secure."
+    },
+    "ctaFinal": {
+      "title": "Ready to transform your workflow?",
+      "primary": "Contact Sales",
+      "secondary": "View Documentation"
+    }
+  },
+  "Navigation": {
+    "product": "Product",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "caseStudies": "Case Studies",
+    "partners": "Partners",
+    "downloads": "Downloads",
+    "support": "Support",
+    "about": "About",
+    "contact": "Contact"
+  }
+}
