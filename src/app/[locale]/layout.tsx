@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.productName}`,
   },
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
+  keywords: siteConfig.keywords as unknown as string[],
   authors: [{ name: siteConfig.companyName }],
   creator: siteConfig.companyName,
   openGraph: {
