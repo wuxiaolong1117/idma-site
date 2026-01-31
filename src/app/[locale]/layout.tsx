@@ -70,7 +70,7 @@ export default async function LocaleLayout({
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
-          <GoogleAnalytics gaId={siteConfig.analytics.googleAnalyticsId} />
+          <GoogleAnalytics />
         </NextIntlClientProvider>
       </body>
     </html>
