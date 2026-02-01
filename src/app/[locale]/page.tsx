@@ -46,13 +46,12 @@ export default function Home() {
             
             {/* PP-100 */}
             <Card className="flex flex-col h-full card-apple overflow-hidden">
-              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0">
-                <div className="relative w-full h-full">
-                  <Image 
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0 overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
                     src="/images/pp-100.jpg" 
                     alt="iDma PP-100" 
-                    fill 
-                    className="object-contain p-8 hover:scale-105 transition-transform duration-500"
+                    className="object-contain max-h-full p-8 hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
@@ -74,13 +73,12 @@ export default function Home() {
 
             {/* PP-110 */}
             <Card className="flex flex-col h-full card-apple overflow-hidden">
-              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0">
-                <div className="relative w-full h-full">
-                  <Image 
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0 overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
                     src="/images/pp-110.jpg" 
                     alt="iDma PP-110" 
-                    fill 
-                    className="object-contain p-8 hover:scale-105 transition-transform duration-500"
+                    className="object-contain max-h-full p-8 hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
@@ -102,13 +100,12 @@ export default function Home() {
 
             {/* PP-120 */}
             <Card className="flex flex-col h-full card-apple overflow-hidden">
-              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0">
-                <div className="relative w-full h-full">
-                  <Image 
+              <div className="aspect-[4/3] bg-[#F5F5F7] relative flex items-center justify-center p-0 overflow-hidden">
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
                     src="/images/pp-120.jpg" 
                     alt="iDma PP-120" 
-                    fill 
-                    className="object-contain p-8 hover:scale-105 transition-transform duration-500"
+                    className="object-contain max-h-full p-8 hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               </div>
