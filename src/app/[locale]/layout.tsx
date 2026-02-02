@@ -62,17 +62,16 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
-          <GoogleAnalytics />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <>
+      <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css" />
+      <NextIntlClientProvider messages={messages}>
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
+        <GoogleAnalytics />
+      </NextIntlClientProvider>
+    </>
   );
 }
