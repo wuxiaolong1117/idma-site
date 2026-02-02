@@ -133,9 +133,3 @@ export default function VideoEmbed({
 
   return null;
 }
-
-<VideoEmbed
-  youtubeUrl="https://www.youtube.com/watch?v=Z2TcQ97t7fA"
-  title="Bring Handwriting Back to Your Zoom Meetings - Instantly！"
-  className="w-full max-w-4xl mx-auto"
-/>
