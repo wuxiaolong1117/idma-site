@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -63,7 +62,6 @@ export default async function LocaleLayout({
 
   return (
     <>
-      <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css" />
       <NextIntlClientProvider messages={messages}>
         <div className="flex min-h-screen flex-col">
           <Header />
