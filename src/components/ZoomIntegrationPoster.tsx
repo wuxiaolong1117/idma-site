@@ -1,5 +1,7 @@
 "use client";
 
+import VideoEmbed from "./VideoEmbed";
+
 export default function ZoomIntegrationPoster() {
   return (
     <div className="w-full bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-2xl overflow-hidden">
@@ -8,9 +10,18 @@ export default function ZoomIntegrationPoster() {
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
           Bring Handwriting Back to Your Zoom Meetings
         </h2>
-        <p className="text-xl text-blue-100 mb-1">
+        <p className="text-xl text-blue-100 mb-6">
           iDma Dual-Board Interconnected AI Teaching Kit
         </p>
+        
+        {/* Video Embed */}
+        <div className="max-w-3xl mx-auto mb-6">
+          <VideoEmbed 
+            youtubeUrl="https://www.youtube.com/watch?v=Z2TcQ97t7fA" 
+            title="iDma Zoom Integration Demo"
+          />
+        </div>
+
         <p className="text-sm text-blue-200">
           Designed for tutors and students, recreating immersive face-to-face tutoring online
         </p>
