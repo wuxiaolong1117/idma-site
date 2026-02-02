@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -6,6 +7,8 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { siteConfig } from "@/config/site";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
@@ -56,16 +59,20 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <>
-      <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css" />
-      <NextIntlClientProvider messages={messages}>
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-grow">{children}</main>
-          <Footer />
-        </div>
-        <GoogleAnalytics />
-      </NextIntlClientProvider>
-    </>
+    <html lang={locale} className="scroll-smooth">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css" />
+      </head>
+      <body className={inter.className}>
+        <NextIntlClientProvider messages={messages}>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+          <GoogleAnalytics />
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
