@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from 'next-intl/server';
 import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
@@ -12,8 +11,7 @@ import SocialShare from "@/components/SocialShare";
 import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
 import { siteConfig } from "@/config/site";
 
-export default function Home({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+export default function Home() {
   const t = useTranslations("HomePage");
 
   return (
