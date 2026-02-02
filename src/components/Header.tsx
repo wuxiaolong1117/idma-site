@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { siteConfig } from "@/config/site";
 import Button from "./Button";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -32,23 +33,29 @@ export default function Header() {
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-8">
-            {siteConfig.navigation.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <Button href="/contact" variant="primary" size="sm">
-              {siteConfig.cta.primary}
-            </Button>
+          <div className="hidden lg:flex lg:items-center lg:space-x-6">
+            <div className="flex items-center space-x-6 mr-2">
+              {siteConfig.navigation.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+            <div className="flex items-center space-x-3 pl-2 border-l border-gray-200">
+              <LanguageSwitcher />
+              <Button href="/contact" variant="primary" size="sm">
+                {siteConfig.cta.primary}
+              </Button>
+            </div>
           </div>
           
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden flex items-center gap-4">
+            <LanguageSwitcher />
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
