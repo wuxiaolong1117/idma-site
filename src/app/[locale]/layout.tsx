@@ -7,6 +7,12 @@ import { siteConfig } from "@/config/site";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 
+const locales = ["en", "es", "fr", "de", "ja", "ko", "zh-cn", "zh-tw", "ru", "ar"];
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 export const metadata: Metadata = {
   title: {
     default: siteConfig.productName,
