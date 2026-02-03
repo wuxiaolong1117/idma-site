@@ -1,25 +1,37 @@
-import { notFound } from "next/navigation";
 import { getRequestConfig } from "next-intl/server";
 
-const locales = ["en", "es", "fr", "de", "ja", "ko", "zh-cn", "zh-tw", "ru", "ar"];
+// Explicitly map locales to their files to avoid dynamic import issues in production
+const messageImports: Record<string, any> = {
+  "en": () => import("./messages/en.json"),
+  "es": () => import("./messages/es.json"),
+  "fr": () => import("./messages/fr.json"),
+  "de": () => import("./messages/de.json"),
+  "ja": () => import("./messages/ja.json"),
+  "ko": () => import("./messages/ko.json"),
+  "zh-cn": () => import("./messages/zh-cn.json"),
+  "zh-tw": () => import("./messages/zh-tw.json"),
+  "ru": () => import("./messages/ru.json"),
+  "ar": () => import("./messages/ar.json"),
+};
 
 export default getRequestConfig(async ({ locale }) => {
-  let messages;
+  // Normalize locale to lowercase to ensure matching (e.g. zh-CN -> zh-cn)
   const normalizedLocale = locale ? locale.toLowerCase() : "en";
-  let finalLocale = normalizedLocale;
-
+  
+  // Find the import function, default to English if not found
+  const importFn = messageImports[normalizedLocale] || messageImports["en"];
+  
+  let messages;
   try {
-    // Try to load the requested locale (normalized to lowercase)
-    messages = (await import(`./messages/${normalizedLocale}.json`)).default;
+    messages = (await importFn()).default;
   } catch (error) {
-    // If not found or error, fallback to English
-    console.error(`Failed to load messages for locale: ${locale}`, error);
-    messages = (await import(`./messages/en.json`)).default;
-    finalLocale = "en";
+    console.error(`Failed to load messages for locale: ${normalizedLocale}`, error);
+    // Fallback to English
+    messages = (await messageImports["en"]()).default;
   }
 
   return {
     messages,
-    locale: finalLocale as string
+    locale: normalizedLocale
   };
 });
