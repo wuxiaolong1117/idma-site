@@ -1,9 +1,10 @@
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const locale = useLocale();
   const currentYear = new Date().getFullYear();
   
   return (
@@ -165,6 +166,7 @@ export default function Footer() {
         
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
           <p>&copy; {currentYear} {siteConfig.companyName}. {t("rights")}</p>
+          <p className="text-gray-600 text-xs mt-2">Locale: {locale}</p>
         </div>
       </div>
     </footer>
