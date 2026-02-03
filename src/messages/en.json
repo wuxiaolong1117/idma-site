@@ -62,5 +62,29 @@
     "support": "Support",
     "about": "About",
     "contact": "Contact"
+  },
+  "Footer": {
+    "company": {
+      "tagline": "Reimagining the future of education and work."
+    },
+    "columns": {
+      "products": "Products & Solutions",
+      "resources": "Resources",
+      "legal": "Legal & Connect"
+    },
+    "links": {
+      "product": "Product",
+      "solutions": "Solutions",
+      "pricing": "Pricing",
+      "caseStudies": "Case Studies",
+      "partners": "Partners",
+      "downloads": "Downloads",
+      "support": "Support",
+      "about": "About",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "contact": "Contact"
+    },
+    "rights": "All rights reserved."
   }
 }

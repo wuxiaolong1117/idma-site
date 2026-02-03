@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 
 export default function Footer() {
+  const t = useTranslations("Footer");
   const currentYear = new Date().getFullYear();
   
   return (
@@ -38,27 +40,27 @@ export default function Footer() {
           {/* Products & Solutions */}
           <div>
             <h3 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-              Products & Solutions
+              {t("columns.products")}
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/product" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Product
+                  {t("links.product")}
                 </Link>
               </li>
               <li>
                 <Link href="/solutions" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Solutions
+                  {t("links.solutions")}
                 </Link>
               </li>
               <li>
                 <Link href="/pricing" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Pricing
+                  {t("links.pricing")}
                 </Link>
               </li>
               <li>
                 <Link href="/case-studies" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Case Studies
+                  {t("links.caseStudies")}
                 </Link>
               </li>
             </ul>
@@ -67,27 +69,27 @@ export default function Footer() {
           {/* Resources */}
           <div>
             <h3 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-              Resources
+              {t("columns.resources")}
             </h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/partners" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Partners
+                  {t("links.partners")}
                 </Link>
               </li>
               <li>
                 <Link href="/downloads" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Downloads
+                  {t("links.downloads")}
                 </Link>
               </li>
               <li>
                 <Link href="/support" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Support
+                  {t("links.support")}
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  About
+                  {t("links.about")}
                 </Link>
               </li>
             </ul>
@@ -96,22 +98,22 @@ export default function Footer() {
           {/* Legal & Social */}
           <div>
             <h3 className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
-              Legal & Connect
+              {t("columns.legal")}
             </h3>
             <ul className="space-y-2 mb-6">
               <li>
                 <Link href="/privacy" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Privacy Policy
+                  {t("links.privacy")}
                 </Link>
               </li>
               <li>
                 <Link href="/terms" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Terms of Service
+                  {t("links.terms")}
                 </Link>
               </li>
               <li>
                 <Link href="/contact" className="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
-                  Contact
+                  {t("links.contact")}
                 </Link>
               </li>
             </ul>
@@ -162,7 +164,7 @@ export default function Footer() {
         </div>
         
         <div className="mt-8 pt-8 border-t border-gray-800 text-center text-sm">
-          <p>&copy; {currentYear} {siteConfig.companyName}. All rights reserved.</p>
+          <p>&copy; {currentYear} {siteConfig.companyName}. {t("rights")}</p>
         </div>
       </div>
     </footer>

@@ -62,5 +62,29 @@
     "support": "支持",
     "about": "关于我们",
     "contact": "联系我们"
+  },
+  "Footer": {
+    "company": {
+      "tagline": "重塑教育与工作的未来。"
+    },
+    "columns": {
+      "products": "产品与解决方案",
+      "resources": "资源",
+      "legal": "法律与联系"
+    },
+    "links": {
+      "product": "产品",
+      "solutions": "解决方案",
+      "pricing": "价格",
+      "caseStudies": "案例研究",
+      "partners": "合作伙伴",
+      "downloads": "下载",
+      "support": "支持",
+      "about": "关于我们",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "contact": "联系我们"
+    },
+    "rights": "版权所有。"
   }
 }
