@@ -8,9 +8,9 @@ import { getMessages } from "next-intl/server";
 
 const locales = ["en", "es", "fr", "de", "ja", "ko", "zh-cn", "zh-tw", "ru", "ar"];
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+// export function generateStaticParams() {
+//   return locales.map((locale) => ({ locale }));
+// }
 
 export const metadata: Metadata = {
   title: {
@@ -62,6 +62,10 @@ export default async function LocaleLayout({
 
   return (
     <>
+      {/* Debug Info - Remove after fix */}
+      <div style={{ background: 'red', color: 'white', padding: '4px', fontSize: '10px', position: 'fixed', top: 0, left: 0, zIndex: 9999 }}>
+        Server Param: {locale}
+      </div>
       <NextIntlClientProvider messages={messages} locale={locale}>
         <div className="flex min-h-screen flex-col">
           <Header />
