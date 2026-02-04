@@ -5,25 +5,28 @@ import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
 import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Products",
   description: "Discover iDma's range of AI-powered handwriting devices for business and education.",
 };
 
-export default function ProductPage() {
+export default async function ProductPage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+
   return (
     <>
       {/* Hero */}
       <Section background="white" className="pt-24 pb-16">
         <Container>
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-apple-display text-5xl md:text-6xl mb-6">
-              Smart Handwriting. <span className="text-[#0071E3]">Reimagined.</span>
-            </h1>
+            <h1 
+              className="text-apple-display text-5xl md:text-6xl mb-6"
+              dangerouslySetInnerHTML={{ __html: t.raw("hero.title") }}
+            />
             <p className="text-xl md:text-2xl text-[#86868B] mb-10 leading-relaxed">
-              Experience the natural feel of pen on paper, instantly digitized and enhanced by AI.
-              Designed for modern meetings, creative collaboration, and personalized education.
+              {t("hero.subtitle")}
             </p>
           </div>
         </Container>
@@ -47,27 +50,26 @@ export default function ProductPage() {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Business</span>
-                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-100</h3>
-                  <p className="text-[#86868B] font-medium">AI Smart Meeting Notebook</p>
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">{t("products.pp100.category")}</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">{t("products.pp100.title")}</h3>
+                  <p className="text-[#86868B] font-medium">{t("products.pp100.subtitle")}</p>
                 </div>
                 <p className="text-[#1D1D1F] mb-6 flex-grow">
-                  Your exclusive AI meeting assistant. Write on real paper with a natural feel, 
-                  and let our AI digitize, organize, and summarize your notes instantly.
+                  {t("products.pp100.description")}
                 </p>
                 <ul className="space-y-3 mb-8 text-sm text-[#424245]">
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Real Paper Feel
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp100.feature1")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Instant AI Sync & Digitization
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp100.feature2")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Meeting Minutes Ready Instantly
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp100.feature3")}
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary" className="w-full">
-                  Request Info
+                  {t("products.pp100.cta")}
                 </Button>
               </div>
             </Card>
@@ -85,27 +87,26 @@ export default function ProductPage() {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Collaboration</span>
-                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-110</h3>
-                  <p className="text-[#86868B] font-medium">Smart Sync Whiteboard</p>
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">{t("products.pp110.category")}</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">{t("products.pp110.title")}</h3>
+                  <p className="text-[#86868B] font-medium">{t("products.pp110.subtitle")}</p>
                 </div>
                 <p className="text-[#1D1D1F] mb-6 flex-grow">
-                  Instant collaboration for agile teams. Sync handwriting directly to digital screens 
-                  in real-time. Essential for brainstorming sessions and hybrid work environments.
+                  {t("products.pp110.description")}
                 </p>
                 <ul className="space-y-3 mb-8 text-sm text-[#424245]">
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Live Paper-to-Screen Sync
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp110.feature1")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Ideal for Small Groups
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp110.feature2")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Draw, Write & Share Instantly
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp110.feature3")}
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary" className="w-full">
-                  Request Info
+                  {t("products.pp110.cta")}
                 </Button>
               </div>
             </Card>
@@ -123,27 +124,26 @@ export default function ProductPage() {
               </div>
               <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
-                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">Education</span>
-                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">iDma PP-120</h3>
-                  <p className="text-[#86868B] font-medium">AI Smart Tutoring System</p>
+                  <span className="text-xs font-semibold tracking-wider text-[#0071E3] uppercase mb-2 block">{t("products.pp120.category")}</span>
+                  <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-2">{t("products.pp120.title")}</h3>
+                  <p className="text-[#86868B] font-medium">{t("products.pp120.subtitle")}</p>
                 </div>
                 <p className="text-[#1D1D1F] mb-6 flex-grow">
-                  AI-powered personalized tutoring. Built for precision education, blending 
-                  traditional handwriting with AI analysis to track progress and enhance learning outcomes.
+                  {t("products.pp120.description")}
                 </p>
                 <ul className="space-y-3 mb-8 text-sm text-[#424245]">
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Precision Teaching Tools
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp120.feature1")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> Natural Handwriting Interaction
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp120.feature2")}
                   </li>
                   <li className="flex items-start">
-                    <span className="text-[#0071E3] mr-2">✓</span> AI-Enhanced Learning Analytics
+                    <span className="text-[#0071E3] mr-2">✓</span> {t("products.pp120.feature3")}
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary" className="w-full">
-                  Request Info
+                  {t("products.pp120.cta")}
                 </Button>
               </div>
             </Card>
@@ -157,12 +157,12 @@ export default function ProductPage() {
         <Container>
           <div className="max-w-5xl mx-auto">
              <div className="text-center mb-16">
-              <h2 className="text-apple-display text-4xl mb-6">
-                Works perfectly with <span className="text-[#0071E3]">Zoom</span>.
-              </h2>
+              <h2 
+                className="text-apple-display text-4xl mb-6"
+                dangerouslySetInnerHTML={{ __html: t.raw("zoom.title") }}
+              />
               <p className="text-xl text-[#86868B] max-w-3xl mx-auto">
-                No complex setup. No new software to learn. Just connect and start writing 
-                to share your ideas instantly in any Zoom meeting.
+                {t("zoom.subtitle")}
               </p>
             </div>
             
@@ -173,20 +173,12 @@ export default function ProductPage() {
                
                <div className="grid md:grid-cols-2 gap-12">
                  <div>
-                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">Seamless Integration</h3>
-                   <p className="text-[#424245] leading-relaxed">
-                     Our hardware integrates directly with Zoom's whiteboard and screen sharing capabilities.
-                     Whether you are teaching a math class or brainstorming a product roadmap, 
-                     your handwriting appears on screen with zero lag.
-                   </p>
+                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">{t("zoom.seamlessTitle")}</h3>
+                   <p className="text-[#424245] leading-relaxed">{t("zoom.seamlessDesc")}</p>
                  </div>
                  <div>
-                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">Secure & Private</h3>
-                   <p className="text-[#424245] leading-relaxed">
-                     Security is built-in, not bolted on. Your data is encrypted end-to-end, 
-                     and we comply with GDPR standards to ensure your meeting content remains 
-                     confidential and secure.
-                   </p>
+                   <h3 className="text-2xl font-semibold text-[#1D1D1F] mb-4">{t("zoom.secureTitle")}</h3>
+                   <p className="text-[#424245] leading-relaxed">{t("zoom.secureDesc")}</p>
                  </div>
                </div>
             </div>
@@ -199,14 +191,14 @@ export default function ProductPage() {
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="text-apple-display text-4xl mb-8">
-              Ready to transform your workflow?
+              {t("ctaFinal.title")}
             </h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="/contact" variant="primary" size="lg">
-                Contact Sales
+                {t("ctaFinal.primary")}
               </Button>
               <Button href="/downloads" variant="secondary" size="lg">
-                View Documentation
+                {t("ctaFinal.secondary")}
               </Button>
             </div>
           </div>
