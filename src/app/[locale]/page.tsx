@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
@@ -11,8 +11,8 @@ import SocialShare from "@/components/SocialShare";
 import ZoomIntegrationPoster from "@/components/ZoomIntegrationPoster";
 import { siteConfig } from "@/config/site";
 
-export default function Home() {
-  const t = useTranslations("HomePage");
+export default async function Home({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "HomePage" });
 
   return (
     <>
