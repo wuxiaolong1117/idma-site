@@ -4,17 +4,16 @@ import Section from "@/components/Section";
 import Container from "@/components/Container";
 import Button from "@/components/Button";
 import Card from "@/components/Card";
+import { getTranslations } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Solutions",
   description: "Discover iDma solutions for 1:1 tutoring, small group classes, classroom capture, and enterprise training.",
-  openGraph: {
-    title: "Solutions | iDma",
-    description: "Discover iDma solutions for 1:1 tutoring, small group classes, classroom capture, and enterprise training.",
-  },
 };
 
-export default function SolutionsPage() {
+export default async function SolutionsPage({ params: { locale } }: { params: { locale: string } }) {
+  const t = await getTranslations({ locale, namespace: "SolutionsPage" });
+
   return (
     <>
       {/* Hero */}
@@ -22,11 +21,10 @@ export default function SolutionsPage() {
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Solutions for Every Use Case
+              {t("hero.title")}
             </h1>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-              Whether you&apos;re delivering 1:1 tutoring, managing classroom sessions, 
-              or conducting enterprise training, iDma can help enhance your teaching and collaboration.
+              {t("hero.subtitle")}
             </p>
           </div>
         </Container>
@@ -39,39 +37,37 @@ export default function SolutionsPage() {
             {/* 1:1 Tutoring */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">1:1 Tutoring</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("tutoring.title")}</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Perfect for individual tutoring sessions where real-time interaction and 
-                  immediate feedback are essential. The dual-board setup enables tutors to 
-                  see student work instantly and provide corrections as they happen.
+                  {t("tutoring.description")}
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-6">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Real-time dual-board interaction</span>
+                    <span>{t("tutoring.features.1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Instant correction and feedback</span>
+                    <span>{t("tutoring.features.2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Session replay for review</span>
+                    <span>{t("tutoring.features.3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>AI-assisted session summaries</span>
+                    <span>{t("tutoring.features.4")}</span>
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary">
-                  Get Started
+                  {t("cta.button")}
                 </Button>
               </div>
               <Card className="bg-blue-50 p-8">
                 <div className="text-center">
                   <div className="text-6xl mb-4">👨‍🏫👨‍🎓</div>
                   <p className="text-gray-700 font-medium">
-                    Teacher and student each have their own device, enabling seamless two-way interaction.
+                    {t("tutoring.card")}
                   </p>
                 </div>
               </Card>
@@ -83,37 +79,35 @@ export default function SolutionsPage() {
                 <div className="text-center">
                   <div className="text-6xl mb-4">👥</div>
                   <p className="text-gray-700 font-medium">
-                    Multiple students can participate, with the teacher&apos;s board visible to all.
+                    {t("smallGroup.card")}
                   </p>
                 </div>
               </Card>
               <div className="order-1 md:order-2">
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Small Group Classes</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("smallGroup.title")}</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Ideal for small group tutoring and workshops. The teacher&apos;s handwriting 
-                  is shared with all participants, while individual students can contribute 
-                  when called upon.
+                  {t("smallGroup.description")}
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-6">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Shared teacher board for all students</span>
+                    <span>{t("smallGroup.features.1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Individual student participation</span>
+                    <span>{t("smallGroup.features.2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Classroom management tools</span>
+                    <span>{t("smallGroup.features.3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Group session recordings</span>
+                    <span>{t("smallGroup.features.4")}</span>
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary">
-                  Get Started
+                  {t("cta.button")}
                 </Button>
               </div>
             </div>
@@ -121,39 +115,37 @@ export default function SolutionsPage() {
             {/* Classroom Capture */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-4">Classroom Capture</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">{t("classroom.title")}</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Capture classroom teaching sessions for students who need to review material 
-                  later or for those who couldn&apos;t attend. All handwriting and annotations 
-                  are recorded automatically.
+                  {t("classroom.description")}
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-6">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Automatic lesson recording</span>
+                    <span>{t("classroom.features.1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Full replay capability</span>
+                    <span>{t("classroom.features.2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Export to various formats</span>
+                    <span>{t("classroom.features.3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Integration with school LMS</span>
+                    <span>{t("classroom.features.4")}</span>
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary">
-                  Get Started
+                  {t("cta.button")}
                 </Button>
               </div>
               <Card className="bg-purple-50 p-8">
                 <div className="text-center">
                   <div className="text-6xl mb-4">📹</div>
                   <p className="text-gray-700 font-medium">
-                    Every stroke is captured, making it easy to review and share lessons.
+                    {t("classroom.card")}
                   </p>
                 </div>
               </Card>
@@ -165,39 +157,37 @@ export default function SolutionsPage() {
                 <div className="text-center">
                   <div className="text-6xl mb-4">💼</div>
                   <p className="text-gray-700 font-medium">
-                    Capture whiteboard sessions, diagrams, and collaborative notes during meetings.
+                    {t("enterprise.card")}
                   </p>
                 </div>
               </Card>
               <div className="order-1 md:order-2">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                  Meeting Minutes & Knowledge Capture
+                  {t("enterprise.title")}
                 </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Designed for enterprise training and knowledge sharing. Capture whiteboard 
-                  discussions, diagrams, and collaborative notes during meetings. AI summaries 
-                  help document key points and action items.
+                  {t("enterprise.description")}
                 </p>
                 <ul className="space-y-3 text-gray-700 mb-6">
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Real-time collaborative notes</span>
+                    <span>{t("enterprise.features.1")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>AI-assisted meeting summaries</span>
+                    <span>{t("enterprise.features.2")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Export to documentation systems</span>
+                    <span>{t("enterprise.features.3")}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-blue-600 mr-2">✓</span>
-                    <span>Secure on-premises deployment option</span>
+                    <span>{t("enterprise.features.4")}</span>
                   </li>
                 </ul>
                 <Button href="/contact" variant="primary">
-                  Get Started
+                  {t("cta.button")}
                 </Button>
               </div>
             </div>
@@ -210,50 +200,47 @@ export default function SolutionsPage() {
         <Container>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Deployment Options
+              {t("deployment.title")}
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Choose the deployment model that best fits your organization&apos;s needs and security requirements.
+              {t("deployment.subtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card>
-              <h3 className="text-2xl font-semibold mb-3">Cloud</h3>
+              <h3 className="text-2xl font-semibold mb-3">{t("deployment.cloud.title")}</h3>
               <p className="text-gray-600 mb-4">
-                Fully managed cloud deployment with automatic updates and scalable infrastructure. 
-                Ideal for most schools and tutoring centers.
+                {t("deployment.cloud.description")}
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>✓ Quick setup</li>
-                <li>✓ Automatic updates</li>
-                <li>✓ Scalable infrastructure</li>
-                <li>✓ Managed backups</li>
+                <li>✓ {t("deployment.cloud.features.1")}</li>
+                <li>✓ {t("deployment.cloud.features.2")}</li>
+                <li>✓ {t("deployment.cloud.features.3")}</li>
+                <li>✓ {t("deployment.cloud.features.4")}</li>
               </ul>
             </Card>
             <Card>
-              <h3 className="text-2xl font-semibold mb-3">On-Premises</h3>
+              <h3 className="text-2xl font-semibold mb-3">{t("deployment.onPremises.title")}</h3>
               <p className="text-gray-600 mb-4">
-                Deploy iDma on your own servers for maximum control and data sovereignty. 
-                Suitable for enterprises with strict security requirements.
+                {t("deployment.onPremises.description")}
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>✓ Full data control</li>
-                <li>✓ Custom security policies</li>
-                <li>✓ Integration with existing systems</li>
-                <li>✓ Dedicated support</li>
+                <li>✓ {t("deployment.onPremises.features.1")}</li>
+                <li>✓ {t("deployment.onPremises.features.2")}</li>
+                <li>✓ {t("deployment.onPremises.features.3")}</li>
+                <li>✓ {t("deployment.onPremises.features.4")}</li>
               </ul>
             </Card>
             <Card>
-              <h3 className="text-2xl font-semibold mb-3">Hybrid</h3>
+              <h3 className="text-2xl font-semibold mb-3">{t("deployment.hybrid.title")}</h3>
               <p className="text-gray-600 mb-4">
-                Combine cloud and on-premises components to balance flexibility with control. 
-                Perfect for organizations with mixed requirements.
+                {t("deployment.hybrid.description")}
               </p>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li>✓ Flexible architecture</li>
-                <li>✓ Sensitive data on-premises</li>
-                <li>✓ Cloud features where needed</li>
-                <li>✓ Custom configuration</li>
+                <li>✓ {t("deployment.hybrid.features.1")}</li>
+                <li>✓ {t("deployment.hybrid.features.2")}</li>
+                <li>✓ {t("deployment.hybrid.features.3")}</li>
+                <li>✓ {t("deployment.hybrid.features.4")}</li>
               </ul>
             </Card>
           </div>
@@ -265,13 +252,13 @@ export default function SolutionsPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Find the Right Solution for You
+              {t("cta.title")}
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Contact us to discuss your specific needs and deployment preferences.
+              {t("cta.subtitle")}
             </p>
             <Button href="/contact" variant="secondary" size="lg">
-              {siteConfig.cta.primary}
+              {t("cta.button")}
             </Button>
           </div>
         </Container>

@@ -86,5 +86,94 @@
       "contact": "Contact"
     },
     "rights": "All rights reserved."
+  },
+  "SolutionsPage": {
+    "hero": {
+      "title": "Solutions for Every Use Case",
+      "subtitle": "Whether you're delivering 1:1 tutoring, managing classroom sessions, or conducting enterprise training, iDma can help enhance your teaching and collaboration."
+    },
+    "tutoring": {
+      "title": "1:1 Tutoring",
+      "description": "Perfect for individual tutoring sessions where real-time interaction and immediate feedback are essential. The dual-board setup enables tutors to see student work instantly and provide corrections as they happen.",
+      "features": {
+        "1": "Real-time dual-board interaction",
+        "2": "Instant correction and feedback",
+        "3": "Session replay for review",
+        "4": "AI-assisted session summaries"
+      },
+      "card": "Teacher and student each have their own device, enabling seamless two-way interaction."
+    },
+    "smallGroup": {
+      "title": "Small Group Classes",
+      "description": "Ideal for small group tutoring and workshops. The teacher's handwriting is shared with all participants, while individual students can contribute when called upon.",
+      "features": {
+        "1": "Shared teacher board for all students",
+        "2": "Individual student participation",
+        "3": "Classroom management tools",
+        "4": "Group session recordings"
+      },
+      "card": "Multiple students can participate, with the teacher's board visible to all."
+    },
+    "classroom": {
+      "title": "Classroom Capture",
+      "description": "Capture classroom teaching sessions for students who need to review material later or for those who couldn't attend. All handwriting and annotations are recorded automatically.",
+      "features": {
+        "1": "Automatic lesson recording",
+        "2": "Full replay capability",
+        "3": "Export to various formats",
+        "4": "Integration with school LMS"
+      },
+      "card": "Every stroke is captured, making it easy to review and share lessons."
+    },
+    "enterprise": {
+      "title": "Meeting Minutes & Knowledge Capture",
+      "description": "Designed for enterprise training and knowledge sharing. Capture whiteboard discussions, diagrams, and collaborative notes during meetings. AI summaries help document key points and action items.",
+      "features": {
+        "1": "Real-time collaborative notes",
+        "2": "AI-assisted meeting summaries",
+        "3": "Export to documentation systems",
+        "4": "Secure on-premises deployment option"
+      },
+      "card": "Capture whiteboard sessions, diagrams, and collaborative notes during meetings."
+    },
+    "deployment": {
+      "title": "Deployment Options",
+      "subtitle": "Choose the deployment model that best fits your organization's needs and security requirements.",
+      "cloud": {
+        "title": "Cloud",
+        "description": "Fully managed cloud deployment with automatic updates and scalable infrastructure. Ideal for most schools and tutoring centers.",
+        "features": {
+          "1": "Quick setup",
+          "2": "Automatic updates",
+          "3": "Scalable infrastructure",
+          "4": "Managed backups"
+        }
+      },
+      "onPremises": {
+        "title": "On-Premises",
+        "description": "Deploy iDma on your own servers for maximum control and data sovereignty. Suitable for enterprises with strict security requirements.",
+        "features": {
+          "1": "Full data control",
+          "2": "Custom security policies",
+          "3": "Integration with existing systems",
+          "4": "Dedicated support"
+        }
+      },
+      "hybrid": {
+        "title": "Hybrid",
+        "description": "Combine cloud and on-premises components to balance flexibility with control. Perfect for organizations with mixed requirements.",
+        "features": {
+          "1": "Flexible architecture",
+          "2": "Sensitive data on-premises",
+          "3": "Cloud features where needed",
+          "4": "Custom configuration"
+        }
+      }
+    },
+    "cta": {
+      "title": "Find the Right Solution for You",
+      "subtitle": "Contact us to discuss your specific needs and deployment preferences.",
+      "button": "Get Started"
+    }
   }
 }
