@@ -7,8 +7,8 @@ export default createMiddleware({
   // Used when no locale matches
   defaultLocale: "en",
   
-  // Detects browser language automatically
-  localeDetection: true,
+  // Disable automatic browser language detection to prevent unwanted redirects (e.g. to /de)
+  localeDetection: false,
 });
 
 export const config = {
